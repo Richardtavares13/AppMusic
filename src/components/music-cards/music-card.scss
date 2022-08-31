@@ -1,0 +1,78 @@
+$deep-blue: rgb(13, 25, 63);
+$white: whitesmoke;
+
+.container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px 10px 4px;
+    width: 80vw;
+    color: $white;
+    border-radius: 60px;
+    margin-bottom: 5px;
+}
+
+.active, .container:hover {
+    background-color: rgba(13, 25, 63, 0.7);
+    cursor: pointer;
+}
+
+.img-and-song {
+    align-items: center;
+}
+
+.image-icon-container{
+    position: relative;
+}
+
+.pause-play{
+    width: 30px;
+    height: 15px;
+    position: absolute;
+    left: 10px;
+    bottom: 15px;
+}
+
+.play{
+    opacity: 0;
+}
+
+.container:hover .play{
+    opacity: 1;
+}
+
+.icon-and-duration {
+    align-items: center;
+}
+
+.duration {
+    font-size: 13px;
+}
+
+.deezer-cont{
+    margin-left: 20px;
+}
+
+.playlist {
+    width: 30px;
+    height: 15px;
+}
+
+
+@media only screen and (min-width: 568px) {
+    .container {
+        width: 480px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .duration {
+        font-size: 15px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 550px;
+    }
+}

@@ -1,0 +1,89 @@
+$lime-color: #00ff00;
+$gray: #3b3530;
+$basic: 400;
+$thick: 700;
+.sidebar {
+    background-color: $gray;
+    padding: 40px 0 0 25px;
+    width: 220px;
+    height: 100vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebar-open{
+        transform: translateX(0);
+}
+
+@media only screen and (max-width: 767px) {    
+    .sidebar-close{
+            transform: translateX(100%);
+            display: none;
+    }
+}
+
+.app-name h1 {
+    font-size: 25px;
+    color: $lime-color;
+    margin-top: 20px;
+}
+
+.app-name {
+    text-decoration: none;
+}
+
+.sity {
+    color: white;
+}
+
+.library,
+.discover {
+    font-weight: $thick;
+    color: $lime-color;
+    font-size: 15px;
+}
+
+.library{
+    margin-top: 40px;
+}
+
+
+.discover{
+    margin-top: 40px;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.link {
+    align-items: center;
+    color: white;
+    display: flex;
+    font-size: 13px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    &:active {
+        color: $lime-color;
+    }
+    &:hover {
+        color: $lime-color;
+    }
+}
+
+.icon {
+    height: 20px;
+    margin-right: 10px;
+    width: 15px;
+    &:hover {
+        color: $lime-color;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .app-name h1{
+        margin-top: 0;
+    }
+}

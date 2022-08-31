@@ -1,0 +1,38 @@
+$lime-color: #00ff00;
+
+.search-container {
+    background-color: #808080;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 65px;
+    height: 110px;
+    z-index: 1;
+    width: 100%;
+}
+
+input {
+    border: none;
+    background-color: inherit;
+    caret-color: $lime-color;
+    font-size: 15px;
+    color: white;
+    width: 400px;
+    outline: none;
+    padding: 20px;
+}
+
+input::placeholder {
+    color: whitesmoke;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .search-container {
+        left: 260px;
+        top: 0;
+        height: 80px;
+    }
+}
